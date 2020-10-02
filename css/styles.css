@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Miso;
+  src: url("../fonts/Miso.eot");
+  src: url("../fonts/Miso.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Miso.woff") format("woff"),
+    url("../fonts/Miso.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Light.eot");
+  src: url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato-Light.woff") format("woff"),
+    url("../fonts/Lato-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Main Styles */
+
+body {
+  font-family: "Miso", sans-serif;
+  background: #fdde7e;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cup_item {
+  background: #fff;
+  flex-basis: 30%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  transition: all 0.1s ease-in;
+}
+
+.cup_item .price {
+  font-size: 70px;
+  font-weight: 700;
+  color: #02995b;
+  margin-bottom: 25px;
+}
+
+.cup_item .cup_img {
+  margin-bottom: 40px;
+}
+
+.cup_item .cup_title {
+  font-size: 70px;
+  color: #333333;
+  margin-bottom: 35px;
+}
+
+.cup_item .cup_info {
+  width: 30%;
+  font-size: 16px;
+  color: #4e4e4e;
+  margin: 0 auto;
+}
+
+.cup_item:nth-child(2) {
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.cup_item:nth-child(2) .price {
+  margin-bottom: 45px;
+}
+
+.cup_item:nth-child(2) .cup_img {
+  margin-bottom: 40px;
+}
+
+.cup_item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
