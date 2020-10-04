@@ -14,7 +14,7 @@
   src: url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Lato-Light.woff") format("woff"),
     url("../fonts/Lato-Light.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -45,17 +45,14 @@ html {
 body {
   font-family: "Miso", sans-serif;
   background: #fdde7e;
-}
-
-.cups {
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 0 1%;
   position: absolute;
-  left: 0;
-  right: 0;
+
   top: 50%;
   transform: translateY(-50%);
 }
@@ -91,6 +88,8 @@ body {
   font-size: 16px;
   color: #4e4e4e;
   margin: 0 auto;
+  /* font-family: Lato, monospace; попробовать подключить с гугла "лайт 300" */
+  /* font-weight: 300; */
 }
 
 .cup_item:nth-child(2) {
